@@ -6,59 +6,76 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <ul>
-      <li>
-        <a style="background-color: #363333"
-          ><img src="BornaBabićLogo.png" class="center" height="46px"
-        /></a>
-      </li>
-      <li><a class="active">Početna</a></li>
-      <li><a href="Vijesti.html">Vijesti</a></li>
-      <li><a href="Tablica.html">Raspored</a></li>
-      <li><a href="Smjerovi.html">Smjerovi</a></li>
-      <li>
+    <div id="navbar">
+      <a href=""
+        ><img
+          id="logo"
+          src="BornaBabićLogo.png"
+          alt="Logo kompanije"
+          style="height: 80px"
+      /></a>
+      <div id="navbar-right">
+        <a class="active">Početna</a>
+        <a href="Vijesti.html">Vijesti</a>
+        <a href="Tablica.html">Raspored</a>
         <div class="dropdown">
-          <b
-            ><img
-              src="Hamburger.png"
-              height="62px"
-              width="55px"
-              style="padding-left: 10px"
-            />
-
-            <button class="dropbtn" style="background: #1000"></button>
-            <div class="dropdown-content">
-              <a href="Kontakt.html">Kontakt</a>
-              <a href="Raspored informacija.html">Raspored informacija</a>
-              <a href="Upisi.html">Upisi</a>
-            </div>
-          </b>
+          <button class="dropbtn">Smjerovi ▼</button>
+          <div class="dropdown-content">
+            <a href="#">Tehničar za računalstvo</a>
+            <a href="#">Elektrotehničar</a>
+            <a href="#">Strojarski računalni tehničar</a>
+            <a href="#">Građevinski tehničari</a>
+          </div>
         </div>
-      </li>
-    </ul>
-    <h1 id="title">Tehnička škola Bjelovar</h1>
-    <main id="main">
-      <article>
-        <h2>Lorem ipsum</h2>
-        <p id="roundCorners">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab reiciendis
-          quam, amet nobis hic libero rem saepe cumque architecto tempora dolore
-          alias itaque. Ab adipisci quos sapiente nihil aut quasi?
-        </p>
-      </article>
-      <img
-        src="https://via.placeholder.com/250"
-        center
-        style="border-radius: 25px; border: 2px solid #e16428; padding: 20px"
-      />
-      <article>
-        <h2>Lorem ipsum</h2>
-        <p id="roundCorners">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab reiciendis
-          quam, amet nobis hic libero rem saepe cumque architecto tempora dolore
-          alias itaque. Ab adipisci quos sapiente nihil aut quasi?
-        </p>
-      </article>
-    </main>
+        <a href="Kontakt.html">Kontakt</a>
+      </div>
+    </div>
+
+    <div style="margin-top: 250px; padding: 15px 15px 250px">
+      <main id="main">
+        <h1 id="title">Tehnička škola Bjelovar</h1>
+        <article>
+          <h2>Lorem ipsum</h2>
+          <p id="roundCorners">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+            reiciendis quam, amet nobis hic libero rem saepe cumque architecto
+            tempora dolore alias itaque. Ab adipisci quos sapiente nihil aut
+            quasi?
+          </p>
+        </article>
+        <img
+          src="https://via.placeholder.com/250"
+          center
+          style="border-radius: 25px; border: 2px solid #e16428; padding: 20px"
+        />
+        <article>
+          <h2>Lorem ipsum</h2>
+          <p id="roundCorners">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+            reiciendis quam, amet nobis hic libero rem saepe cumque architecto
+            tempora dolore alias itaque. Ab adipisci quos sapiente nihil aut
+            quasi?
+          </p>
+        </article>
+      </main>
+    </div>
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 80 ||
+          document.documentElement.scrollTop > 80
+        ) {
+          document.getElementById("navbar").style.padding = "10px 10px";
+          document.getElementById("logo").style.height = "40px";
+        } else {
+          document.getElementById("navbar").style.padding = "40px 10px";
+          document.getElementById("logo").style.height = "70px";
+        }
+      }
+    </script>
   </body>
 </html>

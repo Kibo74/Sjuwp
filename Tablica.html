@@ -34,105 +34,119 @@
     }
   </style>
   <body>
-    <ul>
-      <li>
-        <a style="background-color: #363333"
-          ><img src="BornaBabićLogo.png" class="center" height="46px"
-        /></a>
-      </li>
-      <li><a href="index3.html">Početna</a></li>
-      <li><a href="Vijesti.html">Vijesti</a></li>
-      <li><a class="active">Raspored</a></li>
-      <li><a href="Smjerovi.html">Smjerovi</a></li>
-      <li>
+    <div id="navbar">
+      <a href=""
+        ><img
+          id="logo"
+          src="BornaBabićLogo.png"
+          alt="Logo kompanije"
+          style="height: 80px"
+      /></a>
+      <div id="navbar-right">
+        <a href="index.html">Početna</a>
+        <a href="Vijesti.html">Vijesti</a>
+        <a class="active">Raspored</a>
         <div class="dropdown">
-          <b
-            ><img
-              src="Hamburger.png"
-              height="62px"
-              width="55px"
-              style="padding-left: 10px"
-            />
-
-            <button class="dropbtn" style="background: #1000"></button>
-            <div class="dropdown-content">
-              <a href="Kontakt.html">Kontakt</a>
-              <a href="Raspored informacija.html">Raspored informacija</a>
-              <a href="Upisi.html">Upisi</a>
-            </div>
-          </b>
+          <button class="dropbtn">Smjerovi ▼</button>
+          <div class="dropdown-content">
+            <a href="#">Tehničar za računalstvo</a>
+            <a href="#">Elektrotehničar</a>
+            <a href="#">Strojarski računalni tehničar</a>
+            <a href="#">Građevinski tehničari</a>
+          </div>
         </div>
-      </li>
-    </ul>
+        <a href="Kontakt.html">Kontakt</a>
+      </div>
+    </div>
 
-    <table style="width: 100%">
-      <tr height="75px" , style="font-size: 50px">
-        <th colspan="6">Raspored sati</th>
-      </tr>
-      <tr height="50px">
-        <th style="width: 25px">Sat\dan</th>
-        <th style="width: 100px">Ponedjeljak</th>
-        <th style="width: 100px">Utorak</th>
-        <th style="width: 100px">Srijeda</th>
-        <th style="width: 100px">Četvrtak</th>
-        <th style="width: 100px">Petak</th>
-      </tr>
-      <tr height="50px">
-        <th>0.sat</th>
-        <th>M</th>
-        <th>Hj</th>
-        <th>/Os</th>
-        <th>M</th>
-        <th>Pm / Dio</th>
-      </tr>
-      <tr height="50px">
-        <th>1.sat</th>
-        <th>Pmu / wd</th>
-        <th>Hj</th>
-        <th>/Os</th>
-        <th>Vj</th>
-        <th>Mat</th>
-      </tr>
-      <tr height="50px">
-        <th>2.sat</th>
-        <th>Pmu / Wd</th>
-        <th>F</th>
-        <th>Ej</th>
-        <th>Mup</th>
-        <th>Mat</th>
-      </tr>
-      <tr height="50px">
-        <th>3.sat</th>
-        <th>Niop</th>
-        <th>Fiz</th>
-        <th>Tizk</th>
-        <th>Dbp</th>
-        <th>Rm</th>
-      </tr>
-      <tr height="50px">
-        <th>4.sat</th>
-        <th>Niop / Dio</th>
-        <th>Dbp</th>
-        <th>Sr</th>
-        <th>Dbp / Mup</th>
-        <th>Rm / Sjuwp</th>
-      </tr>
-      <tr height="50px">
-        <th>5.sat</th>
-        <th>Sjuwp / Gr</th>
-        <th>Eng</th>
-        <th>Hj</th>
-        <th>Tizk</th>
-        <th>gr</th>
-      </tr>
-      <tr height="50px">
-        <th>6.sat</th>
-        <th>Sjuwp / Gr</th>
-        <th>Eng</th>
-        <th>Os</th>
-        <th>Rm</th>
-        <th>Gr</th>
-      </tr>
-    </table>
+    <div style="margin-top: 300px; padding: 15px 15px 100px">
+      <table style="width: 100%">
+        <tr height="75px" , style="font-size: 50px">
+          <th colspan="6">Raspored sati</th>
+        </tr>
+        <tr height="50px">
+          <th style="width: 25px">Sat\dan</th>
+          <th style="width: 100px">Ponedjeljak</th>
+          <th style="width: 100px">Utorak</th>
+          <th style="width: 100px">Srijeda</th>
+          <th style="width: 100px">Četvrtak</th>
+          <th style="width: 100px">Petak</th>
+        </tr>
+        <tr height="50px">
+          <th>0.sat</th>
+          <th>M</th>
+          <th>Hj</th>
+          <th>/Os</th>
+          <th>M</th>
+          <th>Pm / Dio</th>
+        </tr>
+        <tr height="50px">
+          <th>1.sat</th>
+          <th>Pmu / wd</th>
+          <th>Hj</th>
+          <th>/Os</th>
+          <th>Vj</th>
+          <th>Mat</th>
+        </tr>
+        <tr height="50px">
+          <th>2.sat</th>
+          <th>Pmu / Wd</th>
+          <th>F</th>
+          <th>Ej</th>
+          <th>Mup</th>
+          <th>Mat</th>
+        </tr>
+        <tr height="50px">
+          <th>3.sat</th>
+          <th>Niop</th>
+          <th>Fiz</th>
+          <th>Tizk</th>
+          <th>Dbp</th>
+          <th>Rm</th>
+        </tr>
+        <tr height="50px">
+          <th>4.sat</th>
+          <th>Niop / Dio</th>
+          <th>Dbp</th>
+          <th>Sr</th>
+          <th>Dbp / Mup</th>
+          <th>Rm / Sjuwp</th>
+        </tr>
+        <tr height="50px">
+          <th>5.sat</th>
+          <th>Sjuwp / Gr</th>
+          <th>Eng</th>
+          <th>Hj</th>
+          <th>Tizk</th>
+          <th>gr</th>
+        </tr>
+        <tr height="50px">
+          <th>6.sat</th>
+          <th>Sjuwp / Gr</th>
+          <th>Eng</th>
+          <th>Os</th>
+          <th>Rm</th>
+          <th>Gr</th>
+        </tr>
+      </table>
+    </div>
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 80 ||
+          document.documentElement.scrollTop > 80
+        ) {
+          document.getElementById("navbar").style.padding = "30px 10px";
+          document.getElementById("logo").style.height = "40px";
+        } else {
+          document.getElementById("navbar").style.padding = "80px 10px";
+          document.getElementById("logo").style.height = "70px";
+        }
+      }
+    </script>
   </body>
 </html>
